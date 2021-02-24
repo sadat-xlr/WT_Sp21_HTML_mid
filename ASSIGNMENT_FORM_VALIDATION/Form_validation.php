@@ -100,7 +100,7 @@
                 $err_name="*Name required";
             }
             else{
-                $name=$_POST["name"];
+                $name=htmlspecialchars($_POST["name"]);
             }
             
             if(empty($_POST["pass"])){
