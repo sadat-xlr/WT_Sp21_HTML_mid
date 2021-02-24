@@ -308,7 +308,15 @@
 
                 <tr>
                 <td><span>Phone Number</span></td>
-                    <td>: <input type="text" placeholder="Phone Number" value="<?php echo $phone; ?>" name="phonenumber">
+                    <span> <td>: <select name="countryCode" value="<?php echo $countryCode;?>" >
+								
+								
+								<?php
+									for($i=1;$i<=100;$i++){
+										echo "<option>$i</option>";	
+									}
+								?>
+							</select>-<input type="text" size="13" placeholder="Phone Number" value="<?php echo $phone; ?>" name="phonenumber"></span>
                     <span><?php echo $err_phone; ?></span> </td>
                 </tr>
                 
